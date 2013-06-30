@@ -17,7 +17,7 @@
 
 
 #define LOG_NDEBUG 0
-#define LOG_TAG "lights.p500"
+#define LOG_TAG "lights.vm701"
 
 #include <cutils/log.h>
 

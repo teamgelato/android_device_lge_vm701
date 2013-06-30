@@ -1,4 +1,4 @@
-DEVICE_PACKAGE_OVERLAYS := device/lge/p500/overlay
+DEVICE_PACKAGE_OVERLAYS := device/lge/vm701/overlay
 
 PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi

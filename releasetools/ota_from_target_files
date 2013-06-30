@@ -104,7 +104,7 @@ OPTIONS.modelidcfg = True
 OPTIONS.hwui = True
 OPTIONS.override_device = 'auto'
 
-EXTRAS_FILE = 'device/lge/p500/releasetools/extras.txt'
+EXTRAS_FILE = 'device/lge/vm701/releasetools/extras.txt'
 
 def MostPopularKey(d, default):
   """Given a dict, return the key corresponding to the largest

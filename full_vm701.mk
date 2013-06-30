@@ -8,6 +8,6 @@ $(call inherit-product-if-exists, vendor/google/gapps.mk)
 PRODUCT_NAME := full_vm701
 PRODUCT_DEVICE := vm701
 PRODUCT_BRAND := lge
-PRODUCT_MODEL := LG-P500
+PRODUCT_MODEL := LG-VM701
 PRODUCT_MANUFACTURER := LGE
 
