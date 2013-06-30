@@ -14,13 +14,12 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/vm701/recovery/graphics.c
 BOARD_HAS_NO_SELECT_BUTTON := true
 
-# TARGET_KERNEL_SOURCE := kernel/lge/msm7x27- to be set when the kernel will be ready!
-# TARGET_KERNEL_CONFIG := cyanogenmod_p500_p509_defconfig - to be set when the kernel will be ready!
-# TARGET_SPECIFIC_HEADER_PATH := device/lge/p500/include - to be set when the kernel will be ready!
-BOARD_KERNEL_CMDLINE := mem=477M console=ttyMSM2,115200n8 androidboot.hardware=gelato androidboot.mode=normal androidboot.carrier=VirginMobile androidboot.bootloader=6170
+TARGET_KERNEL_SOURCE := kernel/lge/msm7x27-3.0.x
+TARGET_KERNEL_CONFIG := cyanogenmod_vm701_defconfig # you guys might want to make a defconfig like this
+TARGET_SPECIFIC_HEADER_PATH := device/lge/vm701/include
+BOARD_KERNEL_CMDLINE := mem=477M console=ttyMSM2,115200n8 androidboot.hardware=p500 androidboot.mode=normal androidboot.carrier=VirginMobile androidboot.bootloader=6170
 BOARD_KERNEL_BASE := 0x12800000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := device/lge/vm701/kernel
 
 # WARNING - these are p500 specifics! Somebody run 'cat /proc/mtd' while using cm7
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00440000
