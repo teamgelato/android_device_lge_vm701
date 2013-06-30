@@ -1,0 +1,60 @@
+rild.libpath=/system/lib/libril-qc-1.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+# NRB_CHANGES_S [myoungkim@nuribom.com] 2011-07-23, [VM701] change ril.subscription.types
+#ril.subscription.types=NV,RUIM
+ril.subscription.types=NV
+
+ro.telephony.call_ring.multiple=false
+ro.telephony.call_ring.delay=1000
+
+ro.telephony.default_network=0
+ro.telephony.ril.v3=signalstrength,skipbrokendatacall,facilitylock,datacall,icccardstatus,1
+mobiledata.interfaces=rmnet0,rmnet1,rmnet2
+
+ro.bt.bdaddr_path=/data/misc/bd_addr
+
+# see also: init.qcom.usb.rc and init.qcom.post_boot.sh
+persist.sys.usb.config=mass_storage,adb
+
+# Fix color banding
+persist.sys.use_dithering=1
+
+# Allow purging of asset bitmaps
+persist.sys.purgeable_assets=1
+
+# Allow up to 5hidden apps
+sys.mem.max_hidden_apps=5
+
+# camera
+ro.product.camera=msm7x27
+debug.camcorder.disablemeta=1
+
+ro.opengles.version=131072
+
+ro.sf.lcd_density=160
+
+# dalvik
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=36m
+dalvik.vm.heapsize=64m
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.verify-bytecode=false
+#dalvik.vm.dexopt-data-only=1
+
+# NRB_CHANGES_S [jhseo@nuribom.com] 2011-05-13, [VM701] change operator.alpha for VirginMobile
+#ro.cdma.home.operator.alpha=Sprint
+ro.cdma.home.operator.alpha=Virgin Mobile
+# NRB_CHANGES_E [jhseo@nuribom.com] 2011-05-13
+# LGE_CHANGE_S [ksjung@nuribom.com] 2011-05-13, Subscriber ID (MCC + 11_12 + MIN = 310 + 00 + MIN) (Android Telephony Manager slate test case)
+ro.cdma.home.operator.subscriber=31000
+#ro.cdma.home.operator.numeric=310120
+

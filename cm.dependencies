@@ -1,0 +1,8 @@
+[
+ {
+   "account": "teamgelato",
+   "repository": "android_vendor_lge",
+   "target_path": "vendor/lge",
+   "branch": "ics"
+ }
+]

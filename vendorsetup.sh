@@ -1,0 +1,2 @@
+add_lunch_combo full_vm701-userdebug
+add_lunch_combo full_vm701-eng
