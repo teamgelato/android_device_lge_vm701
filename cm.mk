@@ -8,7 +8,7 @@ $(call inherit-product, device/lge/vm701/full_vm701.mk)
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 # Include GSM stuff
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/cm/config/cdma.mk)
 
 PRODUCT_NAME := cm_vm701
 PRODUCT_BRAND := lge
