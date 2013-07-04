@@ -85,9 +85,6 @@ BOARD_USES_QCOM_GPS := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE_LEGACY := msm7x27
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
-# We're keeping this libril spec, we never know
-BOARD_PROVIDES_LIBRIL := true
-
 # Yes, we are still on .35 kernel - needed until 3.0 switch
 BOARD_USE_LEGACY_TOUCHSCREEN := true
 
